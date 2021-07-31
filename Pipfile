@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+django-filter = "*"
+django-crispy-forms = "*"
+gunicorn = "*"
+pillow = "*"
+whitenoise = "*"
+django-heroku = "*"
+dj-database-url = "*"
+dj-static = "*"
+django-phonenumber-field = "*"
+phonenumbers = "*"
+crispy-tailwind = "*"
+django-simple-captcha = "*"
+
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"

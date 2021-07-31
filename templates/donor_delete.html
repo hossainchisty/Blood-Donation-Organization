@@ -1,0 +1,28 @@
+{% include 'navbar.html' %}
+{% load tailwind_filters %}
+{% block body %}
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    {% include '_css.html' %}
+    <body class="antialiased font-sans bg-gray-200">
+    <div class="container mx-auto px-2 sm:px-8">
+        <div class="py-8">
+            <div class="container">
+                <div class="py-8 m-5">
+                <form method="post">{% csrf_token %}
+                    <div role="alert">
+                        <div class="bg-red-500 text-white font-bold rounded-t px-4 py-2">
+                            This action can't be undone.
+                        </div>
+                        <div class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
+                            <p>Are you sure doyou want to delete this donor <strong>{{ object }}</strong>?</p>
+                            <input type="submit"class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-t" value="Confirm">
+                        </div>
+                        </div>
+                </form>
+     
+            </div>
+        </div>
+    </div>
+</body>
+{% include '_js.html' %}
+{% endblock body %}

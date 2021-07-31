@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+{% load crispy_forms_tags %}
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Blood Donation Management System</title>
+    <link rel="shortcut icon" href="{% static 'assets/images/fav.png' %}" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static 'assets/images/fav.jpg' %}">
+    {% include '_css.html' %}
+
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+    {% block body %}
+        
+    {% endblock body %}
+</body>
+
+    {% include '_js.html' %}
+</html>
