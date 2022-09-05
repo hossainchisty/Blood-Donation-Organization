@@ -1,4 +1,4 @@
-## Blood Donation Management System build with Python(Django).
+## Blood Donation Management System.
 
 Website that helps users to find blood donors. 
 
